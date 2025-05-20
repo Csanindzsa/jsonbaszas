@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolgozóink</title>
+    <link rel="stylesheet" href="dolgozok.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dolgozóink</h1>
+        
+        <!-- Error message -->
+        <div id="error-message"></div>
+        
+        <!-- Search section -->
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Vezetéknév keresése...">
+            <button id="search-button" class="button">Keresés</button>
+            <button id="show-all-button" class="button">Összes dolgozó</button>
+        </div>
+        
+        <!-- No results message -->
+        <div id="no-results"></div>
+        
+        <!-- Grid view for employees -->
+        <div id="employees-container"></div>
+        
+        <!-- Table view for search results -->
+        <div id="search-results">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Kép</th>
+                        <th>Vezetéknév</th>
+                        <th>Keresztnév</th>
+                        <th>Nem</th>
+                        <th>Ország</th>
+                        <th>E-mail</th>
+                        <th>Telefonszám</th>
+                        <th>Város</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body"></tbody>
+            </table>
+        </div>
+    </div>
+    
+    <script src="dolgozok.js"></script>
+</body>
+</html>

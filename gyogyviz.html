@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8" lang="hu">
+  <title>Bükki gyógyvíz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="jquery.slim.min.js"></script>
+  <script src="popper.min.js"></script>
+  <script src="bootstrap.bundle.min.js"></script>
+  <script src="gyogyviz.js"></script>
+  <link rel="stylesheet" href="gyogyviz.css">
+</head>
+<body style="height:1500px">
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <a class="navbar-brand" href="#top"><h1>Gyógyvíz</h1></a>
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#mp1">Gyógyvizekről általában</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#mp2">Összetevők</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#mp3">Gyógyhatások</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="gyogyfurdokft.html">Gyógyfürdő Kft.</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="">Dolgozóink</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="">Kapcsolat</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="container-fluid">
+  <h2 id="mp1">Gyógyvizekről általában</h2>
+  <div class="row">
+    <div class="col-md-5">
+      <h3>
+        Mi a gyógyvíz?
+      </h3>
+      <p>
+        Gyógyvíznek azokat az ásványvizeket nevezzük, amelyek fizikai tulajdonságai, vagy kémiai összetétele miatt gyógyító hatásúak, és számukra rendelet alapján az ásványvíz, vagy gyógyvíz megnevezést engedélyezték.
+      </p>
+    </div>
+    <div class="col-md-7">
+      <h3>
+        Hogyan keletkeznek a gyógyvizek?
+      </h3>
+      <p>
+        A földfelszín alatti kőzetek kipárolgásának lecsapódása és a beszivárgó víz együttesen felelősek a gyógyvizek keletkezéséért. Míg ezek a vizek a felszínre bukkannak, rengeteg kőzetből szívják fel magukba az ásványi anyagokat, oldott gázokat, és aztán így törnek elő. E vizek kémiai összetételük, netán tulajdonságaik miatt gyógyítú hatásúak – ez teljesen független a hőmérsékletüktől, vagyis a gyógyvíz hideg és meleg egyaránt lehet.
+      </p>
+      
+    </div>
+  </div>
+
+  <h2 id="mp2">Összetevők</h2>
+  <p>Nézzük meg egy a Bükk hegység nyugati lábánál forrásozó, gyógyvizünk <abbr title="Az oldott elemek mennyiségei mg/l egységben értendők!">összetevőit:</abbr></p>
+  <div class="row">
+    <div class="col-md-5">
+      <h3>Kationok</h3>
+      <table class="table-striped">
+        <tr>
+          <td>Nátrium</td>
+          <td>Na+</td>
+          <td>5500,0</td>
+        </tr>
+        <tr>
+          <td>Kálium</td>
+          <td>K+</td>
+          <td>72,0</td>
+        </tr>
+        <tr>
+          <td>Magnézium</td>
+          <td>Mg2+</td>
+          <td>32,5</td>
+        </tr>
+        <tr>
+          <td>Lítium</td>
+          <td>Li+</td>
+          <td>1,7</td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-md-2 d-sm-none d-md-block">
+      <img src="palack.png" alt="Palackos gyógyvíz" title="Palackos gyógyvíz" class="img-fluid">
+    </div>
+    <div class="col-md-5">
+      <h3>Anionok</h3>
+      <table class="table-striped">
+        <tr>
+          <td>Klorid</td>
+          <td>Cl-</td>
+          <td>2023,0</td>
+        </tr>
+        <tr>
+          <td>Bromid</td>
+          <td>Br-</td>
+          <td>11,7</td>
+        </tr>
+        <tr>
+          <td>Jodid</td>
+          <td>I-</td>
+          <td>1,98</td>
+        </tr>
+        <tr>
+          <td>Fluorid</td>
+          <td>F-</td>
+          <td>3,14</td>
+        </tr>
+        <tr>
+          <td>Hidrogén-karbonát</td>
+          <td>HCO<sub>3</sub>-</td>
+          <td>11968,5</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <h2 id="mp3">Gyógyhatások</h2>
+  <div class="row">
+    <div class="col-md-6 col-lg-4 d-sm-none d-md-block">
+      <p>
+        Betegségek, amelyet hatékonyan kezelhetünk jól megválasztott gyógyvízzel:
+      </p>
+      <ul id="betegsegek">
+        <li onmouseover="mutat('cube');" onmouseleave="pucol();">
+          Cukorbetegség <span>⋙</span>
+        </li>
+        <li onmouseover="mutat('emza');" onmouseleave="pucol();">
+          Emésztési zavarok <span>⋙</span> 
+        </li>
+        <li onmouseover="mutat('gyfe');" onmouseleave="pucol();">
+          Gyomorfekély és gyomorhurut <span>⋙</span> 
+        </li>
+        <li onmouseover="mutat('gysa');" onmouseleave="pucol();">
+          Gyomorsav túlképződés <span>⋙</span> 
+        </li>
+        <li onmouseover="mutat('vagy');" onmouseleave="pucol();">
+          Vastagbélgyulladás <span>⋙</span> 
+        </li>
+        <li onmouseover="mutat('lere');" onmouseleave="pucol();">
+          Légzőrendszeri megbetegedések <span>⋙</span> 
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-6 col-lg-4 striped">
+      <h3 class="d-block d-md-none">Cukorbetegség</h3>
+      <p id="cube" class="d-block d-md-none"><script>kiir('cube');</script></p>
+      <h3 class="d-block d-md-none">Emésztési zavarok</h3>
+      <p id="emza" class="d-block d-md-none"><script>kiir('emza');</script></p>
+      <h3 class="d-block d-md-none">Gyomorfekély és gyomorhurut</h3>
+      <p id="gyfe" class="d-block d-md-none"><script>kiir('gyfe');</script></p>
+      <h3 class="d-block d-md-none">Gyomorsav túlképződés</h3>
+      <p id="gysa" class="d-block d-md-none"><script>kiir('gysa');</script></p>
+      <h3 class="d-block d-md-none">Vastagbélgyulladás</h3>
+      <p id="vagy" class="d-block d-md-none"><script>kiir('vagy');</script></p>
+      <h3 class="d-block d-md-none">Légzőrendszeri megbetegedések</h3>
+      <p id="lere" class="d-block d-md-none"><script>kiir('lere');</script></p>
+      <p id="lapozo">Ha kíváncsi valamelyik gyógyhatás részleteire, akkor mozgassa az egérkurzort a megfelelő listaelem fölé!</p>
+    </div>
+    <div class="col-md-12 col-lg-4">
+      <p>
+        Számos léguti megbetegedés kezelésében is sikeres a jól megválasztott gyógyvíz használata:
+      </p>
+      <ul>
+        <li>
+          krupp
+        </li>
+        <li>
+          alsó légúti gyulladás
+        </li>
+        <li>
+          alsó légutak idült gyulladása
+        </li>
+        <li>
+          vírusos garat, -gégegyulladás
+        </li>
+        <li>
+          száraznátha
+        </li>
+        <li>
+          tüdőgyulladás
+        </li>
+        <li>
+          tüdőtágulás
+        </li>
+        <li>
+          idült arcüreggyulladás
+        </li>
+        <li>
+          köhögés
+        </li>
+        <li>
+          légúti hörgőhurut
+        </li>
+        <li>
+          dohányzási ártalom
+        </li>
+        <li>
+          hörgőasztma
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+<footer>
+  Forrás: 
+  <a href="https://biogo.hu/blog/6-betegseg-melyet-hatekonyan-kezelhetunk-salvus-gyogyvizzel" target="_blank">biogo.hu</a>
+  &
+  <a href="https://people.inf.elte.hu/szptabi/" target="_blank">Magyarországi gyógyvizek és hatásuk</a>
+</footer>
+
+</body>
+</html>
+
+

@@ -1,0 +1,97 @@
+body {
+    color: green;
+}
+
+h1 {
+    font-size: 130%;
+}
+h2 {
+    font-size: 120%;
+    padding-top: 100px;
+    color: rgb(52,58,64);
+}
+h3 {
+    font-size: 110%;
+    margin: 20px 0px;
+    color: rgb(52,58,64);
+}
+
+div.container-fluid p {
+    margin: 5px;
+    text-align: justify;
+    text-indent: 15px;
+}
+
+table.table-striped {
+    margin: 20px auto;
+}
+
+table.table-striped td {
+    padding: 15px;
+}
+
+td:nth-child(2) {
+    text-align: center;
+}
+
+td:nth-child(3) {
+    text-align: right;
+}
+
+.palack {
+
+    max-height: 333px;
+}
+
+span {
+    color: white;
+}
+
+#betegsegek li {
+    margin: 10px 0px;
+    padding: 5px 0px;
+}
+
+#betegsegek li:hover {
+    background-color: rgb(242,242,242);
+    cursor: pointer;
+    color: rgb(52,58,64);
+    text-align: right;
+    margin-right: -15px;
+    list-style-type: none;
+}
+
+#betegsegek li:hover span {
+    color: rgb(52,58,64);
+}
+
+.striped {
+    background-color: rgb(242,242,242);
+}
+
+#lapozo {
+    font-size: 90%;
+}
+
+footer{
+    background-color: rgb(52, 58, 64);
+    color: white;
+    padding: 12px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+footer a {
+    color: rgb(154,157,160);
+}
+
+
+a:hover {
+    text-decoration: none;
+    color: lightgreen;
+}
+
+#lapozo p{
+    padding: 15px;
+
+}
